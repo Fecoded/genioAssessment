@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap");
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #017189;
+  --light-primary-color: #2b899d;
+  --white-color: #ffffff;
+  --secondary-color: #fda4af;
+  --light-secondary-color: #fff5e9;
+  --bg-color: #fcfdfe;
+  --bg-card1-color: #fff6e6;
+  --bg-card2-color: #fbf1f0;
+  --bg-card3-color: #ddecef;
+  --text-light-color: #94a3b8;
+}
+
+.pt-30 {
+  padding-top: 8rem;
+}
+
+.aside.aside-dark .aside-logo {
+  background-color: var(--primary-color) !important;
+}
+
+.aside.aside-dark {
+  background-color: #017189 !important;
+}
+
+.aside.aside.dark.aside-hoverable {
+  color: #fff !important;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.text-light-color {
+  color: var(--text-light-color);
+}
+
+.bg-light-primary-color {
+  background: var(--light-primary-color);
+}
+.bg-light-secondary-color {
+  background: var(--light-secondary-color);
+}
+
+.bg-white {
+  background: var(--white-color);
+}
+
+.bg-card1-color {
+  background: var(--bg-card1-color);
+}
+.bg-card2-color {
+  background: var(--bg-card2-color);
+}
+.bg-card3-color {
+  background: var(--bg-card3-color);
+}
+
+.btn.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn.btn-primary {
+  background: var(--primary-color) !important;
+}
+
+.btn.btn-light {
+  color: var(--primary-color) !important;
+}
+
+.aside-dark .menu .menu-item .menu-link,
+.aside-dark .menu .menu-item .menu-link .menu-title {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  background-color: var(--primary-color);
+  color: var(--white-color) !important;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 56px;
+}
+
+.aside-dark .menu .menu-item .menu-link.active,
+.aside-dark .menu .menu-item .menu-link.active .menu-title {
+  transition: color 0.2s ease, background-color 0.2s ease;
+  background-color: var(--white-color);
+  color: var(--primary-color) !important;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 56px;
+}
+
+.aside-dark .menu .menu-item .menu-link:hover,
+.aside-dark .menu .menu-item .menu-link:hover .menu-title {
+  background-color: var(--white-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.genio-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.475rem;
+}
+
+.small-card {
+  background: #ffffff;
+  width: 120px;
+  border: 1px solid #f1f5f9;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.outline-card {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.bg-primary-color {
+  background: var(--primary-color);
+}
+
+.scrollY {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+
+.border-radius-5 {
+  border-radius: 15px;
+}
+
+.welcome-font {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+.large-font {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+
+.font-1 {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+
+.font-2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.form-control {
+  border-radius: 16px !important;
+  height: 53px;
+  border: 1px solid #aac0c5 !important;
+}
+
+.bg-main-color {
+  background: var(--bg-color);
+}
+
+@media (min-width: 992px) {
+  .aside,
+  .aside .aside-menu {
+    width: 316px !important;
+  }
+  .aside-enabled.aside-fixed.header-fixed .header {
+    left: 316px !important;
+  }
+  .header-fixed .header {
+    background-color: var(--bg-color) !important;
+    height: 93px;
+  }
+  .aside-enabled.aside-fixed .wrapper {
+    transition: padding-left 0.3s ease;
+    padding-left: 316px !important;
+  }
+  .nav-line-tabs .nav-item .nav-link.active,
+  .nav-line-tabs .nav-item.show .nav-link,
+  .nav-line-tabs .nav-item .nav-link:hover:not(.disabled) {
+    border-bottom: 3px solid var(--primary-color) !important;
+  }
+  /* .header-fixed.toolbar-fixed .wrapper {
+    padding-top: 0;
+  } */
+}
